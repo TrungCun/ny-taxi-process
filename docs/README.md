@@ -13,7 +13,7 @@ Yellow taxi trip records include fields capturing pick-up and drop-off dates/tim
 
 ## Data modeling
 Once the details for each type of records have been detected, it is easy to know what are the features, entities, and relations of the model. My proposed data model contains the expenses services separated in fact tables, sharing dimensions between these facts, therefore, the proposed model will be a constellation scheme.
-![image](Images\modeling.png "data modeling")
+![image](https://github.com/TrungCun/ny_taxi_etl_aws/blob/main/docs/Images/modeling.png?raw=true "data modeling")
 
 ## Infastructure as Code (IaC) in AWS
 The aim of this section is to create a Redshift cluster on AWS and keep it available for use by the airflow DAG. In addition to preparing the infrastructure, the file AWS-IAC-IAM-EC2-S3-Redshift.ipynb will help you to have an alternative staging zone in S3 as well.
